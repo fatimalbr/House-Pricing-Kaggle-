@@ -51,7 +51,7 @@ We began by examining the dataset:
 ![Log Sale Price Distribution](sale_price_distribution.png)
 
 ### Average Sale Price by Building Type:
-![Average Sale Price by feautures](categorical_feauture.png)
+![Average Sale Price by feautures](imagescategorical_feauture.png)
 
 ---
 
