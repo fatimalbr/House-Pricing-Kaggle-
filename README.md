@@ -48,10 +48,10 @@ We began by examining the dataset:
 ### Heatmap of Missing Values:
 
 ### Sale Price Distribution (Log Scaled):
-![Log Sale Price Distribution](images/sale_price_distribution.png)
+![Log Sale Price Distribution](sale_price_distribution.png)
 
 ### Average Sale Price by Building Type:
-![Average Sale Price by feautures](images/categorical_feauture.png)
+![Average Sale Price by feautures](categorical_feauture.png)
 
 ---
 
