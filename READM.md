@@ -4,7 +4,7 @@ This repository showcases an end-to-end machine learning project analyzing the *
 
 ---
 
-## **Project Overview**
+## 🎨 **Project Overview** 
 
 In this project, we:
 1. Explored and visualized the dataset to understand trends and patterns.
@@ -18,13 +18,13 @@ In this project, we:
 
 ---
 
-## **Dataset**
+## 📂 **Dataset**
 
 The dataset includes two files:
 - `train.csv` - Training data with house features and prices.
 - `test.csv` - Testing data without house prices (used for predictions).
 
-### **Dataset Features**
+### 🚀 **Dataset Features**
 - **Numerical features**: Lot area, year built, living area, etc.
 - **Categorical features**: Neighborhood, building type, etc.
 - **Target**: Sale Price (in USD).
@@ -40,12 +40,18 @@ We began by examining the dataset:
 - Studied the distribution of the target variable (`SalePrice`) before and after log transformation.
 - Explored relationships between categorical features and `SalePrice` using bar plots.
 
-Key Insights:
+🌟 Key Insights:
 - Features like `MSZoning`, `BldgType`, and `Street` show significant variation in average sale prices.
 - Log transformation helped normalize the skewed `SalePrice` distribution.
 
-**Visualization Example**:
-![Heatmap of Missing Values](assets/missing_values.png)
+**Visualization Example**: 
+### Heatmap of Missing Values:
+
+### Sale Price Distribution (Log Scaled):
+![Log Sale Price Distribution](sale_price_distribution.png)
+
+### Average Sale Price by Building Type:
+![Average Sale Price by feautures](imagescategorical_feauture.png)
 
 ---
 
@@ -71,11 +77,11 @@ Steps taken:
    
 2. **Decision Tree Regressor**
    - Tuned using GridSearchCV to find optimal depth and splitting criteria.
-   - Best RMSLE achieved: `X.XXX`.
+   - Best RMSLE achieved: `41012.66`.
 
 3. **XGBoost Regressor**
    - Tuned hyperparameters (`max_depth`, `n_estimators`, `learning_rate`).
-   - Best RMSLE achieved: `X.XXX`.
+   - Best RMSLE achieved: `27507.04`.
 
 **Final Prediction**:
 We combined predictions from Linear Regression and XGBoost Regressor for a weighted ensemble, achieving better performance.
@@ -86,17 +92,11 @@ We combined predictions from Linear Regression and XGBoost Regressor for a weigh
 
 | **Model**                | **Best Parameters**             | **RMSLE**   |
 |--------------------------|----------------------------------|-------------|
-| Linear Regression         | N/A                            | `X.XXX`     |
-| Decision Tree Regressor   | See GridSearchCV results        | `X.XXX`     |
-| XGBoost Regressor         | See GridSearchCV results        | `X.XXX`     |
+| Linear Regression         | N/A                            | `not defined`     |
+| Decision Tree Regressor   | {'model__max_depth': 20, 'model__min_samples_leaf': 4, 'model__min_samples_split': 10}       | `41012.66`     |
+| XGBoost Regressor         | {'model__learning_rate': 0.1, 'model__max_depth': 3, 'model__n_estimators': 200}        | `27507.04`     |
 
-**Leaderboard Score**: `X.XXX` (as submitted to Kaggle).
 
----
 
-## **Usage**
 
-### **Requirements**
-Install the dependencies:
-```bash
-pip install -r requirements.txt
+
